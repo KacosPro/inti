@@ -16,7 +16,6 @@ jobs:
         with:
           node-version: '16.x'
       - name: Install dependencies
-      - run: npm i -g yarn
-      - run: yarn install --use-lockfile
+      - run: yarn --use-lockfile
       - name: Run eslint
       - run: yarn lint
