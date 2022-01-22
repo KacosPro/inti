@@ -5,11 +5,10 @@ name: Test
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -26,4 +25,3 @@ jobs:
       - run: npm i -g yarn
       - run: yarn install --use-lockfile
       - run: yarn test
-    
