@@ -1,11 +1,11 @@
-name: Lint
+name: Run lint
 
 on:
   pull_request:
     branches: [main]
 
 jobs:
-  build:
+  lint:
 
     runs-on: ubuntu-latest
 

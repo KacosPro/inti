@@ -1,12 +1,14 @@
-name: Test
+name: Run test
 
 on:
   pull_request:
     branches: [main]
 
 jobs:
-  setup:
+  test:
+
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -16,9 +18,5 @@ jobs:
           node-version: '16.x'
       - name: Install dependencies
         run: yarn --use-lockfile
-  test:
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
       - name: Run tests
         run: yarn test
