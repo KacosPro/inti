@@ -16,8 +16,8 @@ jobs:
           node-version: '16.x'
       - name: Install dependencies
         run: yarn --use-lockfile
-      - name: Run tests
-        run: yarn test
+      - name: Run eslint
+        run: yarn lint
 
   test:
     runs-on: ubuntu-latest
