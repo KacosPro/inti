@@ -31,7 +31,7 @@
     ]
   },
   "scripts": {
-    "prettier": "lint-staged",
+    "format": "lint-staged",
     "lint": "eslint src",
     "prepare": "husky install",
     "start": "react-scripts start",
